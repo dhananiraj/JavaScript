@@ -3,7 +3,7 @@ let body = document.querySelector("body");
 function changeTagName(oldNode, newTagName) {
   if (oldNode instanceof Element) {
     let newTag = document.createElement(newTagName);
-    newTag.innerText = oldNode.innerText;
+    newTag.innerHTML = oldNode.innerHTML;
     for (let value of oldNode.attributes) {
       newTag.setAttribute(value.name, value.value);
     }
