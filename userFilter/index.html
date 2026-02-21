@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Search and Filter</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="super">
+        <h1 class="heading">User Information</h1>
+        <input id="userInput" type="text" placeholder="Enter user name or email to Search...">
+        <div class="userData">
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/_jrXZ2CZxFNJAnGxzZMYrDOQso7zcKPNy--qYzs6Vc8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA4L3N0cmFu/Z2VyLXRoaW5ncy1z/dGV2ZS0xLmpwZz9x/PTUwJmZpdD1jcm9w/Jnc9ODI1JmRwcj0x/LjU"
+                        alt="stive">
+                </div>
+                <div class="userDetails">
+                    <h4>stive</h4>
+                    <p>stive@strangerthing.com</h3>
+                </div>
+            </div>
+            <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/YdIN_0YR90484GmIknOaYs-AS_HHj591MSQhfYkf2pk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wZW9w/bGUuY29tL3RobWIv/MXQzRUJVdWlXUmNC/elFxTjhtYVF1elpR/bDRBPS8yODJ4MTg4/L2ZpbHRlcnM6bm9f/dXBzY2FsZSgpOm1h/eF9ieXRlcygxNTAw/MDApOnN0cmlwX2lj/YygpL2dhdGVuLW1h/dGFyYXp6by10aGUt/YWNhZGVteS1vZi1t/b3Rpb24tcGljdHVy/ZS1hcnRzLWFuZC1z/Y2llbmNlcy0yMDIy/LW5ldy1tZW1iZXJz/LXJlY2VwdGlvbi0w/NTI5MjQtMS1hZmFh/ZjFkNmZhNjQ0NTMw/YjViYjY1ZjIxNmFh/YzYyMy5qcGc"
+                        alt="Dustin Henderson">
+                </div>
+                <div class="userDetails">
+                    <h4>Dustin Henderson</h4>
+                    <p>Henderson@strangerthing.com</h3>
+                </div>
+            </div>
+            <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/ikysJ1f6LZ3WwEuEFNYdzcTrmifvJUeTD8nDlkYYuz8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLmdl/dHR5d2FsbHBhcGVy/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMTAvU2Fk/aWUtU2luay1QZnAt/Zm9yLUZhY2Vib29r/LmpwZw"
+                        alt="sadiesink">
+                </div>
+                <div class="userDetails">
+                    <h4>Sadie sink</h4>
+                    <p>sadiesink@strangerthing.com</h3>
+                </div>
+            </div>
+            <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/jI0Dw21yhowWI92nzchcA7cW36rzl4ipHTzXeVi_YS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2NiLzVh/L2JjL2NiNWFiYzUy/ZWI2NzcyNmRjODkw/NDM5NDUwNTEwOGJl/LmpwZw"
+                        alt="nancy">
+                </div>
+                <div class="userDetails">
+                    <h4>nancy</h4>
+                    <p>nancy@strangerthing.com</h3>
+                </div>
+            </div>
+            <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/f9rxFf_i0ate82e8FDJ4XZKzoqkn26tZmV9FJDnq7bY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmd1/aW0uY28udWsvaW1n/L21lZGlhLzhmNzU1/MDIzZDRkMTg4ZWZk/MDZlMmMyMjVmNzQ0/MDc0YmExYjI2Mzgv/MF85MF8zNzg2XzIy/NzIvbWFzdGVyLzM3/ODYuanBnP3dpZHRo/PTQ2NSZkcHI9MSZz/PW5vbmUmY3JvcD01/OjQ"
+                        alt="mile">
+                </div>
+                <div class="userDetails">
+                    <h4>millie bobby brown</h4>
+                    <p>millie@strangerthing.com</h3>
+                </div>
+            </div>
+            <div class="user">
+                <div class="userImage">
+                    <img src="https://imgs.search.brave.com/oeifLpcwkUTrzI5CtKm6OlmDTMysdCJGZv8Y4lb6woY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdkLzE5/LzI5LzdkMTkyOWY4/NGZiNWJjZjBjNDI2/MGUyZjY3ZmNkNTU3/LmpwZw"
+                        alt="data">
+                </div>
+                <div class="userDetails">
+                    <h4>robin</h4>
+                    <p>robin@strangerthing.com</h3>
+                </div>
+            </div> -->

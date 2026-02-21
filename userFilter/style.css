@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #badfdb;
+}
+.super {
+  width: 100%;
+  background-color: #fcf9ea;
+  max-width: 40rem;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 50px 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 15px;
+}
+.heading {
+  text-align: center;
+}
+#userInput {
+  padding: 20px;
+  width: 55%;
+  height: 35px;
+  border: solid 1.6px black;
+  border-radius: 10px;
+}
+.userData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.userData .user {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #badfdb81;
+  width: 100%;
+  border-radius: 15px;
+  height: 4rem;
+}
+.userData .user .userImage {
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.userData .user img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.userData .user .userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.userData .user .userDetails h4 {
+  font-size: 17px;
+  gap: 0px;
+}
+.userData .user .userDetails p {
+  font-size: 16px;
+  gap: 0;
+}
+.error {
+  background-color: lightcoral;
+}
